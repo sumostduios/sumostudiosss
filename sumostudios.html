@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumo Studios - The End Light</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('https://example.com/night-sky.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            background-attachment: fixed;
+            animation: nightAnimation 60s infinite alternate;
+        }
+
+        /* Gece animasyonu */
+        @keyframes nightAnimation {
+            0% {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('https://example.com/night-sky.jpg');
+                filter: brightness(0.8);
+            }
+            50% {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('https://example.com/night-sky.jpg');
+                filter: brightness(0.6);
+            }
+            100% {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://example.com/night-sky.jpg');
+                filter: brightness(1);
+            }
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            animation: headerAnimation 10s infinite alternate;
+        }
+
+        /* Başlık animasyonu */
+        @keyframes headerAnimation {
+            0% {
+                color: #00ffcc;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            }
+            50% {
+                color: #ff3399;
+                text-shadow: 2px 2px 5px rgba(255, 51, 153, 0.7);
+            }
+            100% {
+                color: #00ffcc;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            }
+        }
+
+        header h1 {
+            font-size: 56px;
+            color: #00ffcc;
+        }
+
+        .content {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .box {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid #00ffcc;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 900px;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.7);
+        }
+
+        h2, h3 {
+            color: #00ffcc;
+        }
+
+        p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 10px auto;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #00ffcc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            color: #999999;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .download-link {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff3333;
+        }
+
+        .wiki-section {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 40px;
+            box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+        }
+
+        .wiki-section h3 {
+            color: #00ffcc;
+        }
+
+        .wiki-section p {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        .game-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+            margin-top: 20px;
+        }
+
+        .video {
+            margin: 40px auto;
+            max-width: 900px;
+            border: 2px solid #00ffcc;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .contact-form {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.7);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+        }
+
+        .contact-form button {
+            background-color: #00ffcc;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 10px;
+            font-size: 18px;
+            color: #00ffcc;
+            text-decoration: none;
+        }
+
+        .login-button {
+            background-color: #ff3333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #fff;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sumo Studios</h1>
+        <p>Oyunlarımız, güveniniz ve heyecanınız için burada!</p>
+    </header>
+
+    <div class="content">
+        <!-- Sistem Gereksinimleri -->
+        <div class="wiki-section">
+            <h3>The End Light Sistem Gereksinimleri</h3>
+            <p><strong>Minimum Sistem Gereksinimleri:</strong></p>
+            <ul>
+                <li>İşletim Sistemi: Windows XP veya daha yeni</li>
+                <li>İşlemci: 1.0 GHz Single Core</li>
+                <li>RAM: 512 MB</li>
+                <li>Ekran Kartı: DirectX 9.0 uyumlu</li>
+                <li>Depolama: 1 GB boş alan</li>
+            </ul>
+            <p><strong>Tavsiye Edilen Sistem Gereksinimleri:</strong></p>
+            <ul>
+                <li>İşletim Sistemi: Windows 7 veya daha yeni</li>
+                <li>İşlemci: 1.5 GHz Dual Core</li>
+                <li>RAM: 1 GB</li>
+                <li>Ekran Kartı: DirectX 9.0 uyumlu, 256 MB VRAM</li>
+                <li>Depolama: 1.5 GB boş alan</li>
+            </ul>
+        </div>
+
+        <!-- Güvenlik Bilgisi -->
+        <div class="wiki-section">
+            <h3>Sumo Studios Hakkında</h3>
+            <p>Sumo Studios, bağımsız oyun geliştiren bir stüdyodur. Tüm oyunlarımız, düşük sistemli bilgisayarlar için optimize edilmiştir ve oyunculara anlamlı deneyimler sunmak amacıyla tasarlanmıştır. Şirketimiz, oyuncularının güvenliğine ve verilerinin korunmasına büyük önem vermektedir.</p>
+            <p>Güvenlik Politikamız: Tüm kullanıcı verileri gizli tutulur. Hiçbir kişisel veri, üçüncü taraflarla paylaşılmaz. Oyunlarımızda reklamlar veya izleyicilerle veri toplama araçları bulunmaz. Bu nedenle, oyunlarımızı güvenle oynayabilirsiniz.</p>
+        </div>
+
+        <!-- Sosyal Medya Bağlantıları -->
+        <div class="social-links">
+            <h3>Takip Et</h3>
+            <a href="https://www.youtube.com/@sedi-t7o" target="_blank">YouTube</a>
+            <a href="https://discord.gg/wqghYzQZdU" target="_blank">Discord</a>
+        </div>
+
+        <!-- Online Yorumlar -->
+        <div class="contact-form">
+            <h3>Online Yorum Bırak</h3>
+            <p>Oyununuz hakkındaki düşüncelerinizi bizimle paylaşın!</p>
+            <form>
+                <input type="text" name="name" placeholder="Adınız" required>
+                <textarea name="comment" rows="5" placeholder="Yorumunuzu buraya yazın" required></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Sumo Studios - Tüm Hakları Saklıdır</p>
+    </footer>
+</body>
+</html>
