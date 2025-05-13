@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumo Studios</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+        }
+        header, footer {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #2c2c2c;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 40px;
+        }
+        .hero {
+            background-image: url('cover.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+            font-size: 48px;
+        }
+        .games, .about, .contact, .security {
+            margin: 50px 0;
+        }
+        .game-box {
+            background-color: #1a1a1a;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sumo Studios</h1>
+        <p>Macera burada başlayır.</p>
+    </header>
+
+    <nav>
+        <a href="#hero">Ana Sayfa</a>
+        <a href="#games">Oyunlarımız</a>
+        <a href="#about">Hakkımızda</a>
+        <a href="#security">Güvenlik</a>
+        <a href="#contact">İletişim</a>
+    </nav>
+
+    <div class="hero" id="hero">
+        The End Light
+    </div>
+
+    <section class="games" id="games">
+        <h2>Oyunlarımız</h2>
+        <div class="game-box">
+            <h3>The End Light</h3>
+            <p>Hüzünlü bir ormanda kaybolan gazeteci Elias Vane'in hikayesi.</p>
+        </div>
+        <div class="game-box">
+            <h3>Recol</h3>
+            <p>Yüksek tempolu 2D silah oyunu. Hızlı refleks, sert düşmanlar!</p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Hakkımızda</h2>
+        <p>Sumo Studios, bağımsız oyun geliştirme alanında yaratıcı ve duygusal hikayeler anlatan bir ekipten oluşur.</p>
+    </section>
+
+    <section class="security" id="security">
+        <h2>Güvenlik</h2>
+        <p>
+            Sumo Studios, kullanıcı verilerini şifreli sistemlerde saklar. Oyunlarımız üçüncü parti yazılımlar içermez.
+            Uluslararası standartlara (GDPR) uygun veri koruma protokolleri uygular.
+        </p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>İletişim</h2>
+        <p>Email: iletisim@sumostudios.com</p>
+        <p>Adres: Dijital Oyun Sokakları, Kod Şehri</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sumo Studios. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
